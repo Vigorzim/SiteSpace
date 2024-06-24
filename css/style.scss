@@ -1,0 +1,40 @@
+$primary: #205b82;
+$secundary: #000000;
+$clear: #30f17d;
+$font: Arial, Verdana, Tahoma;
+$size: 18px;
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font: $size $font;
+} 
+
+.navbar-brand {
+    img {
+        width: 80px !important;
+    }
+}
+
+.navbar {
+    background: $secundary !important;
+}
+
+ .nav-link {
+    color: #f5f5f5 !important; 
+}
+
+.navbar-toggler {
+    background: #f5f5f5 !important;
+}
+
+.footer {
+    background: $secundary;
+    color: #f5f5f5;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
