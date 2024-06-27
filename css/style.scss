@@ -1,4 +1,4 @@
-$primary: #205b82;
+$primary: #203482;
 $secundary: #000000;
 $clear: #30f17d;
 $font: Arial, Verdana, Tahoma;
@@ -11,6 +11,7 @@ $size: 18px;
 
 body {
     font: $size $font;
+    background-color: $primary;
 } 
 
 .navbar-brand {

@@ -1,5 +1,5 @@
 <div class="container">
-  <h1>Cat game</h1>
+  <h1>Jogos em destaque:</h1>
   <div class="row">
     <div class="col-12 col-md-3">
         <div class="card">

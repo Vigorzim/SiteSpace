@@ -1,3 +1,7 @@
+<?php
+$api_key = "379d3e30a1810200a3cdbe7b2fa2b914";
+$base_url = "https//image.tmdb.org/t/p/original/";
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
