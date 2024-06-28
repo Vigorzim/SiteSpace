@@ -1,7 +1,8 @@
 <?php
-$api_key = "379d3e30a1810200a3cdbe7b2fa2b914";
-$base_url = "https//image.tmdb.org/t/p/original/";
+//$api_key = "3732bbad0ed34e913a31f65e350d6eeb";
+$base_url = "https://crackgamess.000webhostapp.com/api/jogo.php/";
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -18,6 +19,7 @@ $base_url = "https//image.tmdb.org/t/p/original/";
 
 
 <body>
+
 
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
@@ -37,12 +39,15 @@ $base_url = "https//image.tmdb.org/t/p/original/";
           <li class="nav-item">
             <a class="nav-link" href="Quem somos">Quem Somos</a>
           </li>
+
           <li class="nav-item">
             <a class="nav-link" href="Equipe">Equipe</a>
           </li>
+
           <li class="nav-item">
             <a class="nav-link" href="Contato">Contato</a>
           </li>
+
         </ul>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -80,7 +85,9 @@ $base_url = "https//image.tmdb.org/t/p/original/";
   
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/fslightbox.js"></script>
+
   
+
 </body>
 
 </html>
