@@ -18,6 +18,7 @@ $base_url = "https://crackgamess.000webhostapp.com/api/jogo.php/";
 </head>
 
 
+
 <body>
 
 
@@ -41,52 +42,84 @@ $base_url = "https://crackgamess.000webhostapp.com/api/jogo.php/";
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="Equipe">Equipe</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="Contato">Contato</a>
+            <a href="contato" class="nav-link">Contato</a>
           </li>
 
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+        <div class="d-flex">
+          <a href="#" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modalLogin">
+            Efetuar Login
+          </a>
+        </div>
       </div>
     </div>
   </nav>
 
 
 
-   <main>
-      <?php
-      if (isset($_GET["param"])) {
-        $p = explode("/", $_GET["param"]);
-      }
-      
-        $page = $p[0] ?? "home";
+  <main>
+    <?php
+    if (isset($_GET["param"])) {
+      $p = explode("/", $_GET["param"]);
+    }
 
-        $pagina = "paginas/{$page}.php";
+    $page = $p[0] ?? "home";
 
-        if (file_exists($pagina)) {
-          include $pagina;
-        } else {
-          include "paginas/erro.php";
-        }
-      ?>
-   </main>
+    $pagina = "paginas/{$page}.php";
 
-   <footer class="footer">
-      <p class="text-center">
-        Desenvolvido por Igor Uggioni
-      </p>
-   </footer>
-  
+    if (file_exists($pagina)) {
+      include $pagina;
+    } else {
+      include "paginas/erro.php";
+    }
+    ?>
+  </main>
+
+  <footer class="footer">
+    <p class="text-center">
+      Desenvolvido por Igor Uggioni
+    </p>
+  </footer>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="container">
+    <h1 class="text-center">Faça seu login</h1>
+    <form name="formContato" method="post" action="enviar">
+        <label for="nome">Preencha o seu nome:</label>
+        <input type="text" name="nome" id="nome" 
+        required class="form-control">
+        <br>
+        <label for="email">Preencha o seu email:</label>
+        <input type="email" name="email" id="email" 
+        required class="form-control form-control-lg">
+        <br>
+    </form>
+</div>
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary">Salvar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/fslightbox.js"></script>
 
-  
+
 
 </body>
 
