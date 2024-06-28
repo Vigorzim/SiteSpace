@@ -10,6 +10,7 @@ $base_url = "https://crackgamess.000webhostapp.com/api/jogo.php/";
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Space Gaming</title>
+  <base href="http://localhost/spacegaming/">
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -35,10 +36,7 @@ $base_url = "https://crackgamess.000webhostapp.com/api/jogo.php/";
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="Loja">Loja</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Quem somos">Quem Somos</a>
+            <a class="nav-link active" aria-current="page" href="index.php">Loja</a>
           </li>
 
           <li class="nav-item">
@@ -75,12 +73,17 @@ $base_url = "https://crackgamess.000webhostapp.com/api/jogo.php/";
     ?>
   </main>
 
+
+  <a href="https://www.youtube.com/@vIgorzim" target="_blank"><input type="button" value="Youtube"></a>
+
+  <a href="https://www.instagram.com/igorwillcover/?locale=en-GB" target="_blank" ><button>Instagram</button></a>
+
+
   <footer class="footer">
     <p class="text-center">
       Desenvolvido por Igor Uggioni
     </p>
   </footer>
-
 
   <!-- Modal -->
   <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -97,30 +100,36 @@ $base_url = "https://crackgamess.000webhostapp.com/api/jogo.php/";
     <form name="formContato" method="post" action="enviar">
         <label for="nome">Preencha o seu nome:</label>
         <input type="text" name="nome" id="nome" 
-        required class="form-control">
+        required class="form-control" class="required" oninput="nomeValidate()">  
+        <span class="span-required" style="display: none; color: red;" >Deve ter pelo 3 digitos </span>
         <br>
         <label for="email">Preencha o seu email:</label>
         <input type="email" name="email" id="email" 
-        required class="form-control form-control-lg">
+        required class="form-control form-control-lg" class="required" oninput="emailValidate()">
+        <span class="span-required" style="display: none; color: red;">Digite um email valido</span>
         <br>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary">Salvar</button>
+        </div>
     </form>
 </div>
 
 
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-          <button type="button" class="btn btn-primary">Salvar</button>
-        </div>
+        
       </div>
     </div>
   </div>
 
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/fslightbox.js"></script>
-
+  
 
 
 </body>
+<script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/fslightbox.js"></script>
+
+  <script src="js/validacao.js"></script>
+
 
 </html>

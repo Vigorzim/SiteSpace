@@ -44,7 +44,51 @@ body {
     box-shadow: 0 0 10px #CCC;
 }
 
-.h1 {
-    color: #f5f5f5;
+h1 {
+    color: white;
+    text-align: center;
 }
 
+h2 {
+    color: white;
+    text-align: center;
+}
+
+.card {
+    background-color: #000000;
+    width: 180px;
+    height: 260px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px #aaaa;
+}
+
+.card img {
+    width: 100%;
+    width: 130px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.card div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    height: 50%;
+}
+
+.card h1 {
+    font-size: 1.2rem;
+}
+
+.card button {
+    background-color: $clear;
+    height: 30px;
+    border: none;
+    padding: 4px;
+    width: 80%;
+    color: #f5f5f5;
+    font-size: 1rem;
+    font-weight: bold;
+}

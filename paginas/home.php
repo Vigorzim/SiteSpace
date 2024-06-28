@@ -47,8 +47,90 @@
     }
     ?>
 
-    
+    <div class="card">
+        <img src="Imagens/Cat.jpeg">
+        <div>
+            <h1>Cat Destiny</h1>
+            <button>Jogue agora</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="Imagens/Apple.jpeg">
+        <div>
+            <h1>Em busca da golden apple</h1>
+            <button>Jogue agora</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="Imagens/Bird.jpeg">
+        <div>
+            <h1>The bird game</h1>
+            <button>Jogue agora</button>
+        </div>
+    </div>
     
 
   </div>
 </div>
+
+<div class="container">
+  <h2>Outros jogos:</h2>
+  <div class="row">
+
+  <div class="card">
+        <img src="Imagens/Mario.jpeg">
+        <div>
+            <h1>Super Mario world</h1>
+            <button>Jogue agora</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="Imagens/Zelda.jpeg">
+        <div>
+            <h1>The legend of Zelda</h1>
+            <button>Jogue agora</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="Imagens/Cred.jpeg">
+        <div>
+            <h1>Assassin's creed</h1>
+            <button>Jogue agora</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="Imagens/Sonic.jpeg">
+        <div>
+            <h1>Sonic superstars</h1>
+            <button>Jogue agora</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="Imagens/Fort.jpeg">
+        <div>
+            <h1>Fornite</h1>
+            <button>Jogue agora</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="Imagens/Hollow.jpeg">
+        <div>
+            <h1>Hollow knight</h1>
+            <button>Jogue agora</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="Imagens/Mine.jpeg">
+        <div>
+            <h1>Minecraft</h1>
+            <button>Jogue agora</button>
+        </div>
+    </div>
