@@ -74,9 +74,9 @@ $base_url = "https://crackgamess.000webhostapp.com/api/jogo.php/";
   </main>
 
 
-  <a href="https://www.youtube.com/@vIgorzim" target="_blank"><input type="button" value="Youtube"></a>
+  <!--<a href="https://www.youtube.com/@vIgorzim" target="_blank"><input type="button" value="Youtube"></a>
 
-  <a href="https://www.instagram.com/igorwillcover/?locale=en-GB" target="_blank" ><button>Instagram</button></a>
+  <a href="https://www.instagram.com/igorwillcover/?locale=en-GB" target="_blank" ><button>Instagram</button></a> -->
 
 
   <footer class="footer">
